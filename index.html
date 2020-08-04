@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade - Gabriel Fonseca Arbelli</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+
+    <div class="box-ficha">
+
+      <h1 class="box-ficha__titulo mb-4">O Arcano</h1>
+
+      <form>
+        
+        <div class="row">
+
+          <div id="primeiraEtapa" class="col-md-6 py-3 box-ficha__bg">
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">ATRIBUTOS</h2>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="nome">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome...">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="braveza">Braveza</label>
+                  <input type="text" value="0" class="form-control" id="braveza" placeholder="0" disabled>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="esperteza">Esperteza</label>
+                  <input type="text" value="0" class="form-control" id="esperteza" placeholder="0" disabled>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="estranheza">Estranheza</label>
+                  <input type="text" value="0" class="form-control" id="estranheza" placeholder="0" disabled>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="firmeza">Firmeza</label>
+                  <input type="text" value="0" class="form-control" id="firmeza" placeholder="0" disabled>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="sutileza">Sutileza</label>
+                  <input type="text" value="0" class="form-control" id="sutileza" placeholder="0" disabled>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="sorte">Sorte</label>
+                  <input type="range" class="form-control-range" value="0" min="0" max="7" id="sorte">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="box-ficha__label" for="dano">Dano</label>
+                  <input type="range" class="form-control-range" value="0" min="0" max="7" id="dano">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">APARÊNCIA, ESCOLHA UMA EM CADA LISTA</h2>
+              </div>
+              
+              <div class="col-12">
+                <h2 class="box-ficha__opcao">SEXO:</h2>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="Homem" checked>
+                  <label class="form-check-label box-ficha__label" for="sexo1">
+                    Homem
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Mulher">
+                  <label class="form-check-labe box-ficha__label" for="sexo2">
+                    Mulher
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="sexo3" value="Andrógino">
+                  <label class="form-check-label box-ficha__label" for="sexo3">
+                    Andrógino
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <h2 class="box-ficha__opcao">OLHOS:</h2>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="olhos" id="olhos1" value="Olhos sombrios" checked>
+                  <label class="form-check-label box-ficha__label" for="olhos1">
+                    Olhos sombrios
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="olhos" id="olhos2" value="Olhos ferozes">
+                  <label class="form-check-labe box-ficha__label" for="olhos2">
+                    Olhos ferozes
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="olhos" id="olhos3" value="Olhos cansados">
+                  <label class="form-check-label box-ficha__label" for="olhos3">
+                    Olhos cansados
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="olhos" id="olhos4" value="Olhos faiscantes">
+                  <label class="form-check-label box-ficha__label" for="olhos4">
+                    Olhos faiscantes
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <h2 class="box-ficha__opcao">ROUPA:</h2>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="roupas" id="roupa1" value="Roupas amarrotadas" checked>
+                  <label class="form-check-label box-ficha__label" for="olhos1">
+                    Roupas amarrotadas
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="roupas" id="roupa2" value="Roupas estilosas">
+                  <label class="form-check-labe box-ficha__label" for="roupa2">
+                    Roupas estilosas
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="roupas" id="roupa3" value="Roupas góticas">
+                  <label class="form-check-label box-ficha__label" for="roupa3">
+                    Roupas góticas
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="roupas" id="roupa4" value="Roupas antiquadas">
+                  <label class="form-check-label box-ficha__label" for="roupa4">
+                    Roupas antiquadas
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">CLASSIFICAÇÕES, ESCOLHA UMA LINHA</h2>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="classificacao" id="classificacao1" value="1" onclick="pegarClassificacao();" checked>
+                  <label class="form-check-label box-ficha__label" for="classificacao1">
+                    Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="classificacao" id="classificacao2" value="2" onclick="pegarClassificacao();">
+                  <label class="form-check-labe box-ficha__label" for="classificacao2">
+                    Braveza +1, Esperteza +1, Estranheza +2, Firmeza −1, Sutileza ±0
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="classificacao" id="classificacao3" value="3" onclick="pegarClassificacao();">
+                  <label class="form-check-labe box-ficha__label" for="classificacao3">
+                    Braveza −1, Esperteza +2, Estranheza +2, Firmeza ±0, Sutileza −1
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="classificacao" id="classificacao4" value="4" onclick="pegarClassificacao();">
+                  <label class="form-check-labe box-ficha__label" for="classificacao4">
+                    Braveza −1, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza +1
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="classificacao" id="classificacao5" value="5" onclick="pegarClassificacao();">
+                  <label class="form-check-labe box-ficha__label" for="classificacao5">
+                    Braveza ±0, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza ±0
+                  </label>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">MAGIA COMBATIVA</h2>
+              </div>
+
+              <div class="col-md-12">
+                <p class="box-ficha__texto">Você tem alguns feitiços de ataque que pode usar como armas. Quando você usar estes feitiços para partir pra porrada, role +Estranheza em vez de +Braveza. Algumas vezes
+                a situação pode fazer você agir sob pressão para que o feitiço seja lançado sem problemas.
+                Escolha três opções da lista abaixo. Seus feitiços combativos
+                podem combinar qualquer base com qualquer efeito.
+                Magia combativa (escolha três, tendo pelo menos uma
+                base):</p>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Bases:</p>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="base" id="base1" value="Explosão" checked>
+                  <label class="form-check-label box-ficha__label" for="base1">
+                    Explosão [2-dano perto mágica chamativa barulhenta]
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="base" id="base2" value="Bola">
+                  <label class="form-check-labe box-ficha__label" for="base2">
+                    Bola [1-dano perto área mágica chamativa barulhenta]
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="base" id="base3" value="Míssil">
+                  <label class="form-check-labe box-ficha__label" for="base3">
+                    Míssil [1-dano longe mágica chamativa barulhenta]
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="base" id="base4" value="Muralha">
+                  <label class="form-check-labe box-ficha__label" for="base4">
+                    Muralha [1-dano perto barreira 1-armadura mágica chamativa barulhenta]</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Efeitos:</p>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito1" value="Fogo">
+                  <label class="form-check-label box-ficha__label" for="efeito1">Fogo: Adicione +2 de dano e [fogo] para uma base. Com
+                    10+ em uma rolagem de magia combativa, o fogo não
+                    via se espalhar.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito2" value="Força ou Vento">
+                  <label class="form-check-label box-ficha__label" for="efeito2">Força ou Vento: Adicione +1 de dano e [empurrão] para
+                    uma base; ou +1 de armadura para uma muralha.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito3" value="Raio ou Entropia">
+                  <label class="form-check-label box-ficha__label" for="efeito3">Raio ou Entropia: Adicione +1 de dano e [brutal] para
+                    uma base.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito4" value="Frio ou Gelo">
+                  <label class="form-check-label box-ficha__label" for="efeito4">Frio ou Gelo: Adicione −1 de dano e +2 de armadura
+                    para uma muralha; ou +1 de dano e [restritiva] para outras bases.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito5" value="Terra">
+                  <label class="form-check-label box-ficha__label" for="efeito5">Terra: Adicione [empurrão restritiva] para uma base.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="efeito6" value="Necromântica">
+                  <label class="form-check-label box-ficha__label" for="efeito6">Necromântica: Adicione [drena-vida] para uma base.</label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">MOVIMENTOS</h2>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Você recebe todos os movimentos básicos e quatro movimentos de
+                  caçador Arcano. Você recebe este:</p>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">
+                Ferramentas e técnicas: Para poder usar sua magia combativa efetivamente, você depende de uma série de ferramentas e técnicas. Se você não utilizá-las, haverá algumas complicações. Elimine uma destas; você vai necessitar das outras.<br>
+                • Consumíveis: Você precisa ter certos suprimentos — pós,
+                óleos, etc. — a mão para lançar seu feitiço. Eles são consumidos quando você lança o feitiço. Se você não os tiver a
+                mão, seu corpo será o substituto: receba [1-dano ignoraarmadura] quando lançar.<br>
+                • Focos: Você precisa de varinhas, cajados e outros implementos chamativos para focar seus esforços de forma mais
+                poderosa. Se você não tiver o que precisa a mão, sua magia
+                combativa causa −1 de dano.<br>
+                • Gestos: Você precisa ser capaz de gesticular com suas mãos
+                de forma chamativa para poder usar sua magia combativa.<br>
+                Se você estiver preso de alguma forma você ainda consegue lançar o feitiço, mas as chances de dar errado são maiores; receba −1 constante em sua magia combativa.<br>
+                • Encantamentos: Você precisa falar em uma linguagem mística para controlar sua magia sem filtrá-la diretamente com
+                sua mente. Se você usar um feitiço de magia combativa,
+                com sucesso ou falha, enquanto não pode ou não quer falar, você deve imediatamente agir sob pressão para evitar
+                embaralhar seus pensamentos — produzindo alucinações,
+                perda de sentidos e desorientação em geral.
+                </p>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Depois escolhe três destes:</p>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento1" value="Treinamento mágico avançado">
+                  <label class="form-check-label box-ficha__label" for="movimento1">Treinamento mágico avançado: Se você tiver duas de suas
+                    três Ferramentas e técnicas à disposição, você pode ignorar
+                    a terceira.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento2" value="Reputação mágica">
+                  <label class="form-check-label box-ficha__label" for="movimento2">Reputação mágica: Escolha três grandes grupos ou organizações da comunidade sobrenatural, o que pode incluir alguns
+                    dos tipos mais sociáveis de monstros. Eles ouviram falar você
+                    e respeitam seu poder. Com humanos afetados, receba +1 adiante para manipular alguém. Você pode usar manipular alguém em monstros afetados como se eles fossem humanos,
+                    mas sem bônus.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento3" value="Vestuário encantado">
+                  <label class="form-check-label box-ficha__label" for="movimento3">Vestuário encantado: Escolha uma peça de vestuário do dia a
+                    dia — ela está encantada sem nenhuma alteração na aparência.
+                    Receba 1 de dano a menos de qualquer coisa que tentar te acertar através da peça de roupa.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento4" value="Poderia ser pior">
+                  <label class="form-check-label box-ficha__label" for="movimento4">Poderia ser pior: Quando você falhar em uma rolagem
+                    para usar magia você pode usar uma das seguintes opções em vez de perder o controle da magia:
+                    • Fiasco: As preparações e materiais para o feitiço foram arruinados. Você terá que começar do zero
+                    com o tempo de preparação dobrado.
+                    • Isso não vai ser bom: O efeito acontece, mas você aciona todos os defeitos listados menos um. Você escolhe qual defeito vai evitar.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento5" value="Adivinhação forense">
+                  <label class="form-check-label box-ficha__label" for="movimento5">Adivinhação forense: Quando você investigar um
+                    mistério com sucesso, você pode perguntar “Que magia foi feita aqui?” como uma pergunta extra e gratuita.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento6" value="Vá com tudo ou vá pra casa">
+                  <label class="form-check-label box-ficha__label" for="movimento6">Vá com tudo ou vá pra casa: Quando você precisar
+                    usar magia como um requisito de magia grandiosa,
+                    receba +1 constante nestas rolagens de usar magia.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento7" value="Não é minha culpa">
+                  <label class="form-check-label box-ficha__label" for="movimento7">Não é minha culpa: Receba +1 para agir sob pressão
+                    quando estiver lidando com as consequências dos seus
+                    próprios feitiços.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento8" value="Praticante">
+                  <label class="form-check-label box-ficha__label" for="movimento8">Praticante: Escolha dois efeitos dos disponíveis de
+                    usar magia. Receba +1 para usar magia sempre que escolher um destes efeitos.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento9" value="Escudo mágico">
+                  <label class="form-check-label box-ficha__label" for="movimento9">Escudo mágico: Quando você proteger alguém, você
+                    recebe [2-armadura] contra qualquer dano que seja
+                    transferido para você. Isto não acumula com outras armaduras, se houver.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="movimento10" value="Terceiro olho">
+                  <label class="form-check-label box-ficha__label" for="movimento10">Terceiro olho: Quando você perceber uma enrascada,
+                    você pode abrir seu terceiro olho por um momento
+                    para perceber informações extras. Receba +1 de reserva
+                    em qualquer resultado 7 ou maior, você também consegue enxergar coisas invisíveis. Com uma falha, você
+                    ainda pode reservar 1, mas você está exposto aos perigos sobrenaturais. A totalidade da realidade oculta é
+                    dura na mente!
+                    </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">EQUIPAMENTOS</h2>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Você não precisa de muito — além de qualquer foco ou consumível para dar poder à sua magia. No entanto, ainda é
+                bom ter uma reserva.<br>
+                Armas de reserva (escolha uma):</p>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="equipamento" id="equipamento1" value="Revólver velho [2-dano perto recarga barulhenta]" checked>
+                  <label class="form-check-label box-ficha__label" for="equipamento1">
+                    Revólver velho [2-dano perto recarga barulhenta]
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="equipamento" id="equipamento2" value="Faca ritualística [1-dano contato]">
+                  <label class="form-check-labe box-ficha__label" for="equipamento2">
+                    Faca ritualística [1-dano contato]
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="equipamento" id="equipamento3" value="Espada herdada [2-dano contato brutal]">
+                  <label class="form-check-labe box-ficha__label" for="equipamento3">
+                    Espada herdada [2-dano contato brutal]
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">HISTÓRICO</h2>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico1" value="Ele age como sua consciência quando você sente o poder subir à
+                  cabeça. Pergunte a ele sobre a última vez que isto aconteceu." checked>
+                  <label class="form-check-label box-ficha__label" for="historico1">Ele age como sua consciência quando você sente o poder subir à
+                    cabeça. Pergunte a ele sobre a última vez que isto aconteceu.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico2" value="Parentes de sangue, embora vocês não tenham tido contato por
+                  vários anos. Pergunte a ele como vocês se reconectaram.">
+                  <label class="form-check-label box-ficha__label" for="historico2">Parentes de sangue, embora vocês não tenham tido contato por
+                    vários anos. Pergunte a ele como vocês se reconectaram.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico3" value="Mentor de uma outra vida. Pergunte a ele o que ele te ensinou.">
+                  <label class="form-check-label box-ficha__label" for="historico3">Mentor de uma outra vida. Pergunte a ele o que ele te ensinou.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico4" value="Quando você o resgatou exibindo sua magia, você o introduziu
+                  ao sobrenatural. Diga a ele que criatura estava atrás dele.">
+                  <label class="form-check-label box-ficha__label" for="historico4">Quando você o resgatou exibindo sua magia, você o introduziu
+                    ao sobrenatural. Diga a ele que criatura estava atrás dele.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico5" value="Uma velha rivalidade que se tornou uma forte amizade. Diga a
+                  ele o que vocês disputavam.">
+                  <label class="form-check-label box-ficha__label" for="historico5">Uma velha rivalidade que se tornou uma forte amizade. Diga a
+                    ele o que vocês disputavam.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico6" value="Você pensou que ele estava morto, e agora ele está de volta. O
+                  que o “matou”?">
+                  <label class="form-check-label box-ficha__label" for="historico6">Você pensou que ele estava morto, e agora ele está de volta. O
+                    que o “matou”?
+                    </label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico7" value="Ele é um interesse amoroso que vai e volta. Pergunte a ele o que
+                  mantém vocês separados. Diga a ele o que mantém vocês juntos.">
+                  <label class="form-check-label box-ficha__label" for="historico7">Ele é um interesse amoroso que vai e volta. Pergunte a ele o que
+                    mantém vocês separados. Diga a ele o que mantém vocês juntos.</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="historico" id="historico8" value="Um companheiro de luta. Vocês enfrentaram as maiores ameaças juntos.">
+                  <label class="form-check-label box-ficha__label" for="historico8">Um companheiro de luta. Vocês enfrentaram as maiores ameaças juntos.</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="gerarPersonagem();">Criar personagem</button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="resultado" class="col-md-4 offset-md-1 py-3 box-ficha__bg" style="display: none;">
+  
+            <div class="row">
+
+              <div class="col-12">
+                <h2 class="box-ficha__subtitulo">PERSONAGEM</h2>
+              </div>
+
+              <div class="col-12">
+                <p class="box-ficha__texto">Nome: <span id="resultNome"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Braveza: <span id="resultBraveza"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Esperteza: <span id="resultEsperteza"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Estranheza: <span id="resultEstranheza"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Firmeza: <span id="resultFirmeza"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Sutileza: <span id="resultSutileza"></span></p>
+              </div>
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">Sorte: <span id="resultSorte"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Dano: <span id="resultDano"></span></p>
+              </div>
+
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">Sexo: <span id="resultSexo"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Olhos: <span id="resultOlhos"></span></p>
+              </div>
+              <div class="col-12">
+                <p class="box-ficha__texto">Roupa: <span id="resultRoupa"></span></p>
+              </div>
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">
+                  Magia combatitiva: <span id="resultMagia"></span>: 
+                  <span id="resultEfeitos"></span>
+                </p>
+              </div>
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">Movimentos: <span id="resultMovimentos"></span></p>
+              </div>
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">Equipamentos: <span id="resultEquipamento"></span></p>
+              </div>
+              
+              <div class="col-12">
+                <p class="box-ficha__texto">Histórico: <span id="resultHistorico"></span></p>
+              </div>
+              
+              <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="refazerPersonagem();">Refazer personagem</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

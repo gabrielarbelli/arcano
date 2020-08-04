@@ -1,0 +1,80 @@
+body{
+  padding: 20px;
+  background: url('../images/fundo.jpg');
+  background-size: 1500px;
+  background-position: 200px 15%;
+  background-attachment: fixed;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+button{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.box-ficha{
+  width: auto;
+  padding: 0 1rem;
+}
+
+.box-ficha__titulo{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  font-size: 3em; 
+  color: #fffdd9;
+}
+
+.box-ficha__subtitulo{
+  font-size: 1rem;
+  padding-top: 1rem;
+  color: #fff;
+}
+
+.box-ficha__opcao{
+  font-size: .75rem;
+  padding-top: 1rem;
+  color: #fff;
+}
+
+.box-ficha__bg{
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.8);
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.box-ficha__texto{
+  font-size: .75rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.box-ficha__label{
+  font-size: .75rem;
+  color: #fff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.box-ficha__select{
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+.form-control{
+  height: 25px;
+  font-size: .75rem;
+}
+
+.box-ficha__valores{
+  font-size: .75rem;
+  color: #fff;
+}
+
+.box-ficha__resultado{
+  font-size: 1rem;
+  color: #fff;
+}
